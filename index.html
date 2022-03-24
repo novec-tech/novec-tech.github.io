@@ -23,7 +23,7 @@ body {
 
 .content {
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -54,13 +54,12 @@ body {
 
 <div class="content">
   <h1>novec.tech</h1>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
 
 <script>
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
-video.defaultPlaybackRate = 0.1;
+video.playbackRate = 0.5;
 video.play();
   
 function myFunction() {
